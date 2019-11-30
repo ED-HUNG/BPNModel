@@ -1,5 +1,5 @@
 library(readr)
-dat <- read.csv("C:/Users/edwardhung/Desktop/m2.csv")
+dat <- read.csv("m2.csv")
 #====data loading
 library(neuralnet)
 nn  <- neuralnet(cam ~., dat, hidden = c(3, 2), linear.output = FALSE)
